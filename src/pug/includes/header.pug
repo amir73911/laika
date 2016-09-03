@@ -1,0 +1,40 @@
+header.header
+
+	a.logo(href="/")
+		span.logo-icon-wrapper
+			span.logo__back
+			span.logo__person.animated.bounceInUp
+				i.icon.icon-logo-person
+			span.logo__glasses.animated.rotateInDownLeft
+				i.icon.icon-logo-glasses
+
+		span.logo__text Laika
+
+	.main-menu
+		.main-menu__title Выберите социальную сеть для продвижения:
+		.main-menu__items
+			a(href="#").main-menu__item
+				span.main-menu__social-icon.-facebook-back-color
+					+svg('fb')
+				span.main-menu__social-caption Facebook
+			a(href="#").main-menu__item
+				span.main-menu__social-icon.-vk-back-color
+					+svg('vk')
+				span.main-menu__social-caption ВКонтакте
+			a(href="#").main-menu__item
+				span.main-menu__social-icon.-ok-back-color
+					+svg('ok')
+				span.main-menu__social-caption Одноклассники
+			a(href="#").main-menu__item
+				span.main-menu__social-icon.-insta-back-color
+					+svg('insta')
+				span.main-menu__social-caption Инстаграмм
+			a(href="#").main-menu__item
+				span.main-menu__social-icon.-tw-back-color
+					+svg('tw')
+				span.main-menu__social-caption Twitter
+
+	.header__contacts
+		a(href="tel:88003000500").phone 8 800 3000 500
+		a(href="email:info@turbolaika.ru").email info@turbolaika.ru
+

@@ -1,0 +1,40 @@
+$logo-back-size: rem-calc(57px)
+
+.logo
+  display: block
+  height: 92px
+  overflow: hidden
+  position: relative
+  padding-top: 33px
+
+  .logo-icon-wrapper
+    display: inline-block
+    vertical-align: middle
+    margin-right: 10px
+
+  &__back
+    display: block
+    width: $logo-back-size
+    height: $logo-back-size
+    border-radius: 50%
+    background: $white
+
+  &__person
+    display: block
+    position: absolute
+    bottom: 2px
+    left: 5px
+
+  &__glasses
+    display: block
+    position: absolute
+    top: 39px
+    left: 5px
+    animation-delay: 0.75s
+
+  &__text
+    display: inline-block
+    vertical-align: middle
+    color: $white
+    font-size: 38px
+    font: 38px/38px $font-family1
