@@ -43,7 +43,7 @@
 
 // 0. FontFaces
 @import 'https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic';
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&subset=cyrillic';
 
 $font-family1: 'PT Sans', sans-serif;
 $font-family-main: 'Roboto', sans-serif;
@@ -142,7 +142,7 @@ $header-sizes: (
         ),
         medium: (
                 'h1': 48,
-                'h2': 40,
+                'h2': 34,
                 'h3': 31,
                 'h4': 25,
                 'h5': 20,
