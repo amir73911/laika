@@ -1,0 +1,135 @@
+$calculator-back-color: $light-gray
+$calculator-border-radius: 4px
+.calculator
+  padding: 65px 20px 70px
+
+  &__buttons
+
+    &__item
+      padding: 0 5px
+      width: 100%
+      margin-bottom: $vertical-gutter
+
+      a
+        display: block
+        height: 40px
+        background-color: $calculator-back-color
+        border-radius: $calculator-border-radius
+        line-height: 38px
+        padding: 0 20px
+        color: $medium-gray
+        transition: $base-transition
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        &:hover
+          background: darken($calculator-back-color, 5%)
+
+      .icon
+        max-width: 22px
+        max-height: 18px
+        fill: $medium-gray
+        margin-right: 15px
+
+      span
+        font-size: 14px
+
+      &.selected
+        &.vk-button
+          a
+            background: $vk-color
+            color: $white
+            .icon
+              fill: $white
+        &.fb-button
+          a
+            background: $fb-color
+            color: $white
+            .icon
+              fill: $white
+        &.insta-button
+          a
+            background: $insta-color
+            color: $white
+            .icon
+              fill: $white
+        &.ok-button
+          a
+            background: $ok-color
+            color: $white
+            .icon
+              fill: $white
+        &.tw-button
+          a
+            background: $tw-color
+            color: $white
+            .icon
+              fill: $white
+        &.gp-button
+          a
+            background: $gp-color
+            color: $white
+            .icon
+              fill: $white
+        &.yt-button
+          a
+            background: $yt-color
+            color: $white
+            .icon
+              fill: $white
+
+  &__budget
+    padding: 30px
+    background: $calculator-back-color
+    border-radius: $calculator-border-radius
+    margin-bottom: $vertical-gutter
+
+    .captions
+      display: flex
+      align-items: center
+
+    .caption
+      color: $dark-gray
+      font-size: 13px
+      font-weight: 500
+      text-transform: uppercase
+
+    .price
+      flex-grow: 1
+      color: $cyan-color2
+      font-size: 34px
+      font-weight: 700
+      line-height: 34px
+      text-align: right
+
+  &__result
+    padding: 18px 30px
+    background: $calculator-back-color
+    border-radius: $calculator-border-radius
+    text-align: center
+    height: 100%
+    margin-bottom: $vertical-gutter
+
+    .name
+      color: $dark-gray
+      font-size: 13px
+      font-weight: 500
+      text-transform: uppercase
+      margin-bottom: $vertical-gutter / 2
+
+    .count
+      color: $cyan-color2
+      font-size: 34px
+      font-weight: 700
+      line-height: 34px
+      margin-bottom: $vertical-gutter / 2
+
+    .caption
+      color: $medium-gray2
+      line-height: 20px
+      margin-bottom: $vertical-gutter / 2
+      font-size: 14px
+      height: 40px
+
+    .button
+      margin-bottom: 0

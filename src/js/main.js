@@ -1,11 +1,13 @@
 //= partials/app.js
 
 $(document).ready(function() {
-    //$(document).foundation();
+    $(document).foundation();
 
-    $('.count').counterUp({
+    $('.site-counters .count').counterUp({
         delay: 10,
         time: 5000
     });
 
+    budgetCalculator.init();
+    
 });

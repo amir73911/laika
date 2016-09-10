@@ -68,13 +68,14 @@ $vertical-gutter: $rem-base;
 $global-font-size: 100%;
 $global-width: $max-container-width;
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
+$primary-color: #4cb4d5;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #e6e6e6;
+$light-gray: #f3f3f3;
 $medium-gray: #999;
+$medium-gray2: #666;
 $dark-gray: #333;
 $black: #0a0a0a;
 $white: #fff;
@@ -93,12 +94,14 @@ $global-text-direction: ltr;
 $fb-color: #1b579d;
 $vk-color: #597da3;
 $ok-color: #f68428;
-$insta-color: #a66d4e;
+$insta-color: #8a3ab9;
 $tw-color: #00acf5;
+$yt-color: #e52d27;
+$gp-color:  #dd4b39;
 
-// Backs colors
-// Style for "Rectangle"
 $cyan-color: #72c9be;
+$cyan-color2: #71d4c8;
+$blue-color: $primary-color;
 
 // 2. Breakpoints
 // --------------
@@ -151,7 +154,7 @@ $header-sizes: (
 );
 $header-color: inherit;
 $header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
+$header-margin-bottom: 1em;
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
@@ -263,13 +266,13 @@ $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: #fff;
-$button-color-alt: #000;
-$button-radius: $global-radius;
+$button-color: $white;
+$button-color-alt: $black;
+$button-radius: 4px;
 $button-sizes: (
         tiny: 0.6rem,
         small: 0.75rem,
-        default: 0.9rem,
+        default: rem-calc(13),
         large: 1.25rem,
 );
 $button-opacity-disabled: 0.25;
@@ -476,15 +479,15 @@ $reveal-overlay-background: rgba($black, 0.45);
 // 28. Slider
 // ----------
 
-$slider-height: 0.5rem;
+$slider-height: 3px;
 $slider-width-vertical: $slider-height;
-$slider-background: $light-gray;
-$slider-fill-background: $medium-gray;
-$slider-handle-height: 1.4rem;
-$slider-handle-width: 1.4rem;
-$slider-handle-background: $primary-color;
+$slider-background: $white;
+$slider-fill-background: $blue-color;
+$slider-handle-height: 1rem;
+$slider-handle-width: 1rem;
+$slider-handle-background: $blue-color;
 $slider-opacity-disabled: 0.25;
-$slider-radius: $global-radius;
+$slider-radius: 50%;
 $slider-transition: all 0.2s ease-in-out;
 
 // 29. Switch

@@ -39,7 +39,7 @@ var path = {
     },
     watch: {
         pug: 'src/**/*.pug',
-        mainJs: 'src/js/**/main.js',
+        mainJs: 'src/js/**/*.js',
         vendorsJs: 'src/js/**/vendors.js',
         style: 'src/sass/**/*.*',
         img: 'src/images/**/*.*',

@@ -1,0 +1,74 @@
+section.calculator
+	.site-container
+		h2.text-center Узнай, что можешь получить за свои деньги
+
+		.row.first-row
+			.column.medium-3
+
+				.calculator__buttons
+					.calculator__buttons__item.selected
+						a(href="#")
+							+svg('fb')
+							span Facebook
+					.calculator__buttons__item
+						a(href="#")
+							+svg('vk')
+							span Вконтакте
+					.calculator__buttons__item
+						a(href="#")
+							+svg('ok')
+							span Одноклассники
+					.calculator__buttons__item
+						a(href="#")
+							+svg('insta')
+							span Instagram
+					.calculator__buttons__item
+						a(href="#")
+							+svg('tw')
+							span Twitter
+					.calculator__buttons__item
+						a(href="#")
+							+svg('yt')
+							span Youtube
+					.calculator__buttons__item
+						a(href="#")
+							+svg('gl')
+							span Google +
+
+
+			.column.medium-9
+
+		.row
+			.column
+
+				.calculator__budget
+
+					.captions
+						.caption Ваш бюджет, руб.
+						.price 30 000
+
+					.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="5000" data-step="10")
+						.slider-handle(data-slider-handle role="slider" tabindex="1")
+						.slider-fill(data-slider-fill)
+
+			.column.large-2(data-equalizer-watch)
+				.calculator__result
+					.name Боты
+					.count 2000
+					.caption Лайков или подписчиков
+					a(href="#").button Заказать
+
+			.column.large-2
+				.calculator__result
+					.name Боты
+					.count 2000
+					.caption Лайков или подписчиков
+					a(href="#").button Заказать
+
+			.column.large-2
+				.calculator__result
+					.name Живые люди
+					.count 500
+					.caption Подписчиков
+					a(href="#").button Заказать
+
