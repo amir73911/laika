@@ -52,7 +52,7 @@ $font-family-main: 'Roboto', sans-serif;
 // 1. Global
 // ---------
 
-$rem-base: rem-calc(16);
+$rem-base: 16;
 
 $max-container-width: rem-calc(1200px);
 
@@ -64,7 +64,7 @@ $base-xlarge-font-size: rem-calc($rem-base + 4); // 20
 
 $base-transition: .3s;
 
-$vertical-gutter: $rem-base;
+$vertical-gutter: rem-calc($rem-base);
 $global-font-size: 100%;
 $global-width: $max-container-width;
 $global-lineheight: 1.5;
@@ -73,7 +73,7 @@ $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #f3f3f3;
+$light-gray: #f6f6f6;
 $medium-gray: #999;
 $medium-gray2: #666;
 $dark-gray: #333;
@@ -150,7 +150,7 @@ $header-sizes: (
                 'h1': 48,
                 'h2': 34,
                 'h3': 31,
-                'h4': 25,
+                'h4': 18,
                 'h5': 20,
                 'h6': 16,
         ),
