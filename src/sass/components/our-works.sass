@@ -1,0 +1,30 @@
+$our-works-slider-dots-size: rem-calc(18)
+
+.our-works
+  padding: 80px 20px
+  background: $blue-color2
+
+.our-works-slider
+  .item
+    padding: 0 30px
+    text-align: center
+    img
+      margin-bottom: $vertical-gutter
+    span
+      display: block
+      color: $white
+
+  .owl-dots
+    text-align: center
+    margin: ($vertical-gutter * 3) 0 0
+    .owl-dot
+      display: inline-block
+      vertical-align: middle
+      width: $our-works-slider-dots-size
+      height: $our-works-slider-dots-size
+      border-radius: 50%
+      background: $dark-blue-color
+      margin: 0 ($our-works-slider-dots-size / 2)
+      transition: $base-transition
+      &.active
+        background: $light-blue-color

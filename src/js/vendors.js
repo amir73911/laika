@@ -35,3 +35,4 @@
 
 // Other vendor
 //= vendors/jquery.counterup.min.js
+//= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
