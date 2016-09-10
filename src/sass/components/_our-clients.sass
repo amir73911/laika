@@ -1,0 +1,21 @@
+$our-clients-item-size: rem-calc(185)
+
+.our-clients
+  padding: 80px 0
+  background: $light-gray
+  font-size: 0
+  text-align: center
+
+  &__item
+    display: inline-block
+    vertical-align: middle
+    background: $white
+    width: $our-clients-item-size
+    height: $our-clients-item-size
+    margin: 3px
+    text-align: center
+    transition: $base-transition
+    &:hover
+      transform: scale(1.07)
+      +m-shadow(2)
+
