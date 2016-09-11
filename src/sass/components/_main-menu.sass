@@ -9,14 +9,28 @@
   &__title
     font-size: 14px
     font-weight: 500
-    line-height: 65px
+    line-height: 28px
     text-transform: uppercase
+    margin:
+      top: $vertical-gutter
+      bottom: $vertical-gutter
+    +breakpoint(medium)
+      margin-top: 0
+      line-height: 65px
 
   &__item
-    display: inline-block
-    vertical-align: middle
-    &:not(:last-child)
-      margin-right: 30px
+    display: block
+    margin-bottom: $vertical-gutter
+    text-align: left
+    +breakpoint($header-breakpoint)
+      text-align: center
+      display: inline-block
+      vertical-align: middle
+      &:not(:last-child)
+        margin:
+          left: $vertical-gutter
+          right: $vertical-gutter
+
 
   &__social-icon
     display: inline-block

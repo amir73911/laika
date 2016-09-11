@@ -10,9 +10,16 @@
   &__item
     color: $white
     display: flex
+    margin-bottom: $vertical-gutter
+    +breakpoint(medium)
+      padding: 0 0 0 27%
+    +breakpoint(large)
+      margin-bottom: 0
+      padding: 0
 
     .image
       width: 80px
+      min-width: 80px
       margin-right: $vertical-gutter
       max-height: 70px
 

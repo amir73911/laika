@@ -102,13 +102,29 @@ $calculator-border-radius: 4px
       line-height: 34px
       text-align: right
 
+  &__packs
+    +flex-grid-row
+    margin:
+      left: -$vertical-gutter / 2
+      right: -$vertical-gutter / 2
+
+
   &__result
+    +flex-grid-column(12)
+
     padding: 18px 30px
     background: $calculator-back-color
     border-radius: $calculator-border-radius
     text-align: center
     height: 100%
-    margin-bottom: $vertical-gutter
+    margin:
+      right: $vertical-gutter / 2
+      bottom: $vertical-gutter
+
+    +breakpoint(medium)
+      +flex-grid-column()
+      margin:
+        left: $vertical-gutter / 2
 
     .name
       color: $dark-gray

@@ -3,7 +3,15 @@
   padding: 30px 0 40px
 
   .logo
-    margin-bottom: $vertical-gutter
+    margin:
+      bottom: $vertical-gutter
+
+  .column
+    padding-top: $vertical-gutter * 2
+    &:first-child
+      padding-top: 0
+    +breakpoint(large)
+      padding-top: 0
 
   h6
     color: $medium-gray
