@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     $('.site-counters .count').counterUp({
         delay: 10,
-        time: 5000
+        time: 2000
     });
 
     budgetCalculator.init();
@@ -56,6 +56,7 @@ $(document).ready(function () {
     $('.our-works-slider').owlCarousel({
         dots: true,
         autoplay: true,
+        loop: true,
         lazyLoad: true,
         responsive: {
             0: {

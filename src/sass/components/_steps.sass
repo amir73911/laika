@@ -1,0 +1,42 @@
+.steps
+  padding: 80px 0
+  background: $light-gray url('../images/steps-back.png') center center repeat-x
+
+  .column
+    +breakpoint(medium)
+      &:not(:last-child)
+        .steps__item
+          &:before
+            content: ""
+            display: block
+            width: 100%
+            border-bottom: 2px dashed $orange-color2
+            position: absolute
+            top: 35px
+            left: 50%
+
+
+  &__item
+    text-align: center
+    padding: 0 ($vertical-gutter * 2) ($vertical-gutter * 2)
+    position: relative
+
+    +breakpoint(medium)
+      padding: 0 $vertical-gutter * 2
+    +breakpoint(large)
+      padding: 0 $vertical-gutter * 4
+
+    .step
+      width: 70px
+      height: 70px
+      line-height: 70px
+      display: inline-block
+      text-align: center
+      color: $white
+      background: $orange-color
+      font-size: 40px
+      font-weight: 900
+      border-radius: 50%
+      margin-bottom: $vertical-gutter
+      position: relative
+      box-shadow: 0 0 0 $vertical-gutter $light-gray
