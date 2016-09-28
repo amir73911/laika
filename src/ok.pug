@@ -5,23 +5,20 @@ doctype html
 html
 	head(lang="ru")
 	include pug/metatags.pug
-	+title('Главная')
+	+title('Facebook')
 	include pug/styles.pug
 	include pug/scripts.pug
-body
+body.inner-page
 	include pug/svg.pug
 
 	section.head
 
 		include pug/includes/header.pug
-		include pug/includes/hero.pug
+		include pug/includes/calculator-ok.pug
 
-	include pug/includes/features.pug 
+
 	include pug/includes/site-counters.pug
 	include pug/includes/steps.pug
-	include pug/includes/calculator.pug
-	include pug/includes/our-works.pug
-	include pug/includes/our-clients.pug
 	include pug/includes/instruments.pug
 	include pug/includes/content.pug
 
