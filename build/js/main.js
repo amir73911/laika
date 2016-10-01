@@ -1,8 +1,16 @@
 var prices = {
     "vk" : {
-        "likes" : {
-            "100": 20,
-            "200": 30
+        "followers" : {
+            "100": 300,
+            "200": 580,
+            "300": 850,
+            "400": 1100,
+            "500": 1340,
+            "600": 1560,
+            "700": 1760,
+            "1000": 2300,
+            "5000": 10500,
+            "10000": 17890
         }
     }
 };
@@ -69,6 +77,23 @@ $(document).ready(function () {
                 items: 3
             }
         }
+    });
+
+    $('.j-order-btn ').click(function(e) {
+        e.preventDefault();
+        var $link = $(this);
+
+        var request = $.post(location.origin + '/order-page.php', {
+            inv_desc: $link.data('caption'),
+            out_summ: $link.data('sum')
+        });
+
+        request.done(function( data ) {
+            var $btn = $(data).find('#orderBtn');
+            $btn.click();
+        });
+
+
     });
 
 });

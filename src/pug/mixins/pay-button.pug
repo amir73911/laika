@@ -1,0 +1,24 @@
+mixin payButton(caption, sum, btnCaption)
+	a(href="#" data-caption=caption title=caption data-sum=sum).button.calculator__pack-buttons__item.j-order-btn !{btnCaption}
+
+
+mixin payForm()
+	-var mrh_login = "turbolaika"
+	-var mrh_pass1 = "SNL8n9iD9bcuhaP9rU8c"
+	-var inv_id = 0
+	-var inv_desc = "100 лайков в ВК"
+	-var out_summ = "1.01"
+	-var shp_item = "2"
+	-var in_curr = ""
+	-var culture = "ru"
+
+	form(action="https://merchant.roboxchange.com/Index.aspx" method="POST")
+		input(type="hidden" name="MrchLogin" value=mrh_login)
+		input(type="hidden" name="OutSum" value=out_summ)
+		input(type="hidden" name="InvId" value=inv_id)
+		input(type="hidden" name="Desc" value=inv_desc)
+		input(type="hidden" name="SignatureValue" value=intToHex)
+		input(type="hidden" name="Shp_item" value=shp_item)
+		input(type="hidden" name="IncCurrLabel" value=in_curr)
+		input(type="hidden" name="Culture" value=culture)
+		input(type="submit" value="Оплата").button

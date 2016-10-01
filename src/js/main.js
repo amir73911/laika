@@ -29,4 +29,21 @@ $(document).ready(function () {
         }
     });
 
+    $('.j-order-btn ').click(function(e) {
+        e.preventDefault();
+        var $link = $(this);
+
+        var request = $.post(location.origin + '/order-page.php', {
+            inv_desc: $link.data('caption'),
+            out_summ: $link.data('sum')
+        });
+
+        request.done(function( data ) {
+            var $btn = $(data).find('#orderBtn');
+            $btn.click();
+        });
+
+
+    });
+
 });
