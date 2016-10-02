@@ -71,6 +71,7 @@ gulp.task('mainJs:build', function () {
     gulp.src(path.src.mainJs)
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
         .pipe(rigger())
+        .pipe(uglify())
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.stream());
 });

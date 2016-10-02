@@ -9,15 +9,15 @@ section.calculator.calculator--vk.calculator--custom(data-type="vk")
 
 				.calculator__pack-buttons
 					+payButton('100 подписчиков в ВК', 1, '100шт. - 300₽')
-					+payButton('200 подписчиков в ВК', 1000, '200шт. - 580₽')
+					+payButton('200 подписчиков в ВК', 1000, '200шт. - 1000₽')
 
 			.column.medium-4.small-12
 
 				h5 Лайки Вконтакте
 
 				.calculator__pack-buttons
-					+payButton('100 лайков в ВК', 5, '100шт. - 300₽')
-					+payButton('200 лайков в ВК', 10, '200шт. - 580₽')
+					+payButton('100 лайков в ВК', 5, '100шт. - 5₽')
+					+payButton('200 лайков в ВК', 100, '200шт. - 100₽')
 
 
 			.column.medium-4.small-12
@@ -27,24 +27,24 @@ section.calculator.calculator--vk.calculator--custom(data-type="vk")
 				.row
 					.column.small-12
 
-						.calculator__budget
+						.calculator__budget(data-slider-type="vk")
 							.captions
 								.caption Ваш бюджет, руб.
 								.price 30 000
 
-							.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="5000" data-step="10")
+							.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="6000" data-step="20")
 								.slider-handle(data-slider-handle role="slider" tabindex="1")
 								.slider-fill(data-slider-fill)
 
 				.calculator__packs
 
-					.calculator__result
+					.calculator__result(data-pack-type="followers")
 						.name Подписчики
-						.count 2000
-						a(href="#").button.expanded Заказать
+						.count 0
+						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
 
-					.calculator__result
+					.calculator__result(data-pack-type="likes")
 						.name Лайки
-						.count 500
-						a(href="#").button.expanded Заказать
+						.count 0
+						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
 

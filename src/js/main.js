@@ -29,7 +29,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.j-order-btn ').click(function(e) {
+    $('body').on('click', '.j-order-btn', function(e) {
         e.preventDefault();
         var $link = $(this);
 
