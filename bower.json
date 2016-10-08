@@ -12,6 +12,7 @@
   ],
   "dependencies": {
     "foundation-sites": "^6.1.2",
-    "owl.carousel": "^2.1.6"
+    "owl.carousel": "^2.1.6",
+    "animate.css": "^3.5.2"
   }
 }

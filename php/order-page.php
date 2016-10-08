@@ -15,7 +15,7 @@ $inv_id = 0;
 
 // описание заказа
 // order description
-$inv_desc = $_POST['inv_desc'];
+$inv_desc = $_POST['inv_desc'] . '. Ссылка: ' .  $_POST['linkToPage'];
 
 // сумма заказа
 // sum of order
@@ -49,6 +49,6 @@ print "<html>" .
     "<input type=hidden name=Shp_item value='$shp_item'>" .
     "<input type=hidden name=IncCurrLabel value=$in_curr>" .
     "<input type=hidden name=Culture value=$culture>" .
-    "<input type=submit value='Pay' id='orderBtn'>" .
+    "<input type=submit value='Pay' class='button' id='orderBtn'>" .
     "</form></html>";
 ?>

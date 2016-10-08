@@ -1,6 +1,10 @@
 //= partials/app.js
 
 $(document).ready(function () {
+    
+    var sum, 
+        caption;
+    
     $(document).foundation();
 
     $('.site-counters .count').counterUp({
@@ -31,19 +35,46 @@ $(document).ready(function () {
 
     $('body').on('click', '.j-order-btn', function(e) {
         e.preventDefault();
-        var $link = $(this);
+        showOrderPopup();
+        caption = $(this).data('caption');
+        sum = $(this).data('sum');
+    });
 
-        var request = $.post(location.origin + '/order-page.php', {
-            inv_desc: $link.data('caption'),
-            out_summ: $link.data('sum')
-        });
+    $('body').on('click', '.j-to-pay-btn', function(e) {
+        e.preventDefault();
+        var $input = $('#orderLinkInput');
 
-        request.done(function( data ) {
-            var $btn = $(data).find('#orderBtn');
-            $btn.click();
-        });
+        if ($input.val()) {
+            $input.removeClass('error');
+            var request = $.post(location.origin + '/order-page.php', {
+                inv_desc: caption,
+                linkToPage: $input.val(),
+                out_summ: sum
+            });
 
+            request.done(function( data ) {
+                var $btn = $(data).find('#orderBtn');
+                $btn.click();
+            });
+        } else {
+            $input.addClass('error');
+        }
 
     });
+
+    $('.popup-outer').click(function(e) {
+        e.preventDefault();
+        closeOrderPopup();
+    });
+    
+    function showOrderPopup() {
+        $('.popup-outer').fadeIn();
+        $('.j-order-popup').show();
+    }
+
+    function closeOrderPopup() {
+        $('.popup-outer').fadeOut();
+        $('.j-order-popup').fadeOut();
+    }
 
 });

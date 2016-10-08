@@ -4,23 +4,27 @@ $calculator-border-radius: 4px
   padding: 65px 20px 70px
 
   &--custom
-    h2
+    background-image: url('../images/calculator-back.png')
+    background-attachment: fixed
+    h2,
+    h5
       color: $white
+      text-shadow: 0 0 2px rgba($black, 0.2)
 
   &--fb
-    background: lighten($fb-color, 30%)
+    background-color: lighten($fb-color, 35%)
 
   &--vk
-    background: lighten($vk-color, 30%)
+    background-color: lighten($vk-color, 33%)
 
   &--ok
-    background: lighten($ok-color, 30%)
+    background-color: lighten($ok-color, 30%)
 
   &--insta
-    background: lighten($insta-color, 30%)
+    background-color: lighten($insta-color, 38%)
 
   &--tw
-    background: lighten($tw-color, 30%)
+    background-color: lighten($tw-color, 32%)
 
   &__big-icon
     .icon
@@ -29,6 +33,8 @@ $calculator-border-radius: 4px
   &__pack-buttons
     &__item
       width: calc(50% - 0.5rem)
+      text-transform: none !important
+      +m-shadow(1, false)
       &:nth-child(even)
         margin-left: $vertical-gutter / 2
       &:nth-child(odd)
@@ -58,6 +64,7 @@ $calculator-border-radius: 4px
         white-space: nowrap
         overflow: hidden
         text-overflow: ellipsis
+        +m-shadow(1, false)
         &:hover
           background: darken($calculator-back-color, 5%)
 
@@ -119,6 +126,7 @@ $calculator-border-radius: 4px
     background: $calculator-back-color
     border-radius: $calculator-border-radius
     margin-bottom: $vertical-gutter
+    +m-shadow(1, false)
 
     .captions
       display: flex
@@ -147,7 +155,7 @@ $calculator-border-radius: 4px
 
   &__result
     +flex-grid-column(12)
-
+    +m-shadow(1)
     padding: 18px 30px
     background: $calculator-back-color
     border-radius: $calculator-border-radius

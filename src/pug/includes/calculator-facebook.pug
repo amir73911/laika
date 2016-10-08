@@ -1,45 +1,74 @@
-section.calculator.calculator--fb.calculator--custom
+section.calculator.calculator--fb.calculator--custom(data-type="fb")
 	.site-container
 		h2.text-center Узнай, что можешь получить за свои деньги
 
-		.row.first-row.align-middle
-			.column.medium-3.small-12
+		.row.first-row
+			.column.medium-4.small-12
 
-				.calculator__big-icon
-					+svg('fb')
+				h5 Поделиться в Facebook
+
+				.calculator__pack-buttons
+					+payButton('поделиться в Facebook', 100, 300)
+					+payButton('поделиться в Facebook', 200, 580)
+					+payButton('поделиться в Facebook', 300, 850)
+					+payButton('поделиться в Facebook', 400, 1100)
+					+payButton('поделиться в Facebook', 500, 1340)
+					+payButton('поделиться в Facebook', 600, 1560)
+					+payButton('поделиться в Facebook', 700, 1760)
+					+payButton('поделиться в Facebook', 800, 1940)
+					+payButton('поделиться в Facebook', 1000, 2180)
+					+payButton('поделиться в Facebook', 2000, 4000)
+					+payButton('поделиться в Facebook', 4000, 6000)
+					+payButton('поделиться в Facebook', 5000, 8000)
+					+payButton('поделиться в Facebook', 10000, 15790)
+					+payButton('поделиться в Facebook', 15000, 23000)
+
+			.column.medium-4.small-12
+
+				h5 Лайки в Facebook
+
+				.calculator__pack-buttons
+					+payButton('лайков в Facebook', 100, 250)
+					+payButton('лайков в Facebook', 200, 490)
+					+payButton('лайков в Facebook', 300, 730)
+					+payButton('лайков в Facebook', 400, 970)
+					+payButton('лайков в Facebook', 500, 1200)
+					+payButton('лайков в Facebook', 600, 1350)
+					+payButton('лайков в Facebook', 700, 1490)
+					+payButton('лайков в Facebook', 1000, 1690)
+					+payButton('лайков в Facebook', 2000, 3300)
+					+payButton('лайков в Facebook', 4000, 5690)
+					+payButton('лайков в Facebook', 5000, 6990)
+					+payButton('лайков в Facebook', 10000, 13200)
+					+payButton('лайков в Facebook', 20000, 25890)
+					+payButton('лайков в Facebook', 50000, 60150)
 
 
-			.column.medium-9.small-12
+			.column.medium-4.small-12
+
+				h5 Калькулятор
 
 				.row
 					.column.small-12
 
-						.calculator__budget
+						.calculator__budget(data-slider-type="fb")
 							.captions
 								.caption Ваш бюджет, руб.
 								.price 30 000
 
-							.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="5000" data-step="10")
+							.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="60000" data-step="20")
 								.slider-handle(data-slider-handle role="slider" tabindex="1")
 								.slider-fill(data-slider-fill)
 
 				.calculator__packs
 
-					.calculator__result
-						.name Боты
-						.count 2000
-						.caption Лайков или подписчиков
-						a(href="#").button.expanded Заказать
+					.calculator__result(data-pack-type="reposts")
+						.name Поделиться
+						.count 0
+						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
 
-					.calculator__result
-						.name Боты
-						.count 2000
-						.caption Лайков или подписчиков
-						a(href="#").button.expanded Заказать
-
-					.calculator__result
-						.name Живые люди
-						.count 500
-						.caption Подписчиков
-						a(href="#").button.expanded Заказать
+					.calculator__result(data-pack-type="likes")
+						.name Лайки
+						.count 0
+						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
 

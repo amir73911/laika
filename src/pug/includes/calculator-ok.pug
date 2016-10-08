@@ -1,45 +1,70 @@
-section.calculator.calculator--ok.calculator--custom
+section.calculator.calculator--ok.calculator--custom(data-type="ok")
 	.site-container
 		h2.text-center Узнай, что можешь получить за свои деньги
 
-		.row.first-row.align-middle
-			.column.medium-3.small-12
+		.row.first-row
+			.column.medium-4.small-12
 
-				.calculator__big-icon
-					+svg('ok')
+				h5 Подписчики в Одноклассниках
+
+				.calculator__pack-buttons
+					+payButton('подписчики в Одноклассниках', 100, 280)
+					+payButton('подписчики в Одноклассниках', 200, 560)
+					+payButton('подписчики в Одноклассниках', 300, 840)
+					+payButton('подписчики в Одноклассниках', 400, 1050)
+					+payButton('подписчики в Одноклассниках', 500, 1290)
+					+payButton('подписчики в Одноклассниках', 600, 1540)
+					+payButton('подписчики в Одноклассниках', 700, 1690)
+					+payButton('подписчики в Одноклассниках', 1000, 1790)
+					+payButton('подписчики в Одноклассниках', 2000, 3490)
+					+payButton('подписчики в Одноклассниках', 5000, 8670)
+					+payButton('подписчики в Одноклассниках', 10000, 17800)
+					+payButton('подписчики в Одноклассниках', 20000, 33900)
+
+			.column.medium-4.small-12
+
+				h5 Классы в Одноклассниках
+
+				.calculator__pack-buttons
+					+payButton('классов в Одноклассниках', 100, 280)
+					+payButton('классов в Одноклассниках', 200, 560)
+					+payButton('классов в Одноклассниках', 300, 840)
+					+payButton('классов в Одноклассниках', 400, 1050)
+					+payButton('классов в Одноклассниках', 500, 1290)
+					+payButton('классов в Одноклассниках', 600, 1540)
+					+payButton('классов в Одноклассниках', 700, 1690)
+					+payButton('классов в Одноклассниках', 1000, 1790)
+					+payButton('классов в Одноклассниках', 2000, 3490)
+					+payButton('классов в Одноклассниках', 5000, 8670)
+					+payButton('классов в Одноклассниках', 10000, 17800)
+					+payButton('классов в Одноклассниках', 20000, 33900)
 
 
-			.column.medium-9.small-12
+			.column.medium-4.small-12
+
+				h5 Калькулятор
 
 				.row
 					.column.small-12
 
-						.calculator__budget
+						.calculator__budget(data-slider-type="ok")
 							.captions
 								.caption Ваш бюджет, руб.
 								.price 30 000
 
-							.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="5000" data-step="10")
+							.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="34000" data-step="20")
 								.slider-handle(data-slider-handle role="slider" tabindex="1")
 								.slider-fill(data-slider-fill)
 
 				.calculator__packs
 
-					.calculator__result
-						.name Боты
-						.count 2000
-						.caption Лайков или подписчиков
-						a(href="#").button.expanded Заказать
+					.calculator__result(data-pack-type="followers")
+						.name Поделиться
+						.count 0
+						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
 
-					.calculator__result
-						.name Боты
-						.count 2000
-						.caption Лайков или подписчиков
-						a(href="#").button.expanded Заказать
-
-					.calculator__result
-						.name Живые люди
-						.count 500
-						.caption Подписчиков
-						a(href="#").button.expanded Заказать
+					.calculator__result(data-pack-type="likes")
+						.name Лайки
+						.count 0
+						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
 

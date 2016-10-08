@@ -35,8 +35,8 @@ footer.footer
 				h6 Контакты
 
 				.footer__contacts
-					a(href="tel:88003000500").phone 8 800 3000 500
-					a(href="email:info@turbolaika.ru").email info@turbolaika.ru
+					//- a(href="tel:88003000500").phone 8 800 3000 500
+					a(href="mailto:info@turbo-laika.ru").email info@turbo-laika.ru
 
 			.column.large-3.medium-6.small-12
 
@@ -53,8 +53,11 @@ footer.footer
 					a(href="#" target="_black" title="Одноклассники")
 						+svg('ok')
 
-					a(href="#" target="_black" title="Instagram")
+					a(href="https://www.instagram.com/turbolaika.ru/" target="_black" title="Instagram")
 						+svg('insta')
 
 					a(href="#" target="_black" title="Twitter")
 						+svg('tw')
+
+include popups.pug
+include ../metrics.pug

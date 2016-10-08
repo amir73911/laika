@@ -1,45 +1,74 @@
-section.calculator.calculator--insta.calculator--custom
+section.calculator.calculator--insta.calculator--custom(data-type="insta")
 	.site-container
 		h2.text-center Узнай, что можешь получить за свои деньги
 
-		.row.first-row.align-middle
-			.column.medium-3.small-12
+		.row.first-row
+			.column.medium-4.small-12
 
-				.calculator__big-icon
-					+svg('insta')
+				h5 Подписчики (боты) Instargam
+
+				.calculator__pack-buttons
+					+payButton('подписчиков (ботов) Instargam', 100, 160)
+					+payButton('подписчиков (ботов) Instargam', 200, 310)
+					+payButton('подписчиков (ботов) Instargam', 300, 450)
+					+payButton('подписчиков (ботов) Instargam', 400, 590)
+					+payButton('подписчиков (ботов) Instargam', 500, 720)
+					+payButton('подписчиков (ботов) Instargam', 600, 830)
+					+payButton('подписчиков (ботов) Instargam', 800, 990)
+					+payButton('подписчиков (ботов) Instargam', 1000, 1090)
+					+payButton('подписчиков (ботов) Instargam', 2000, 1890)
+					+payButton('подписчиков (ботов) Instargam', 4000, 2290)
+					+payButton('подписчиков (ботов) Instargam', 5000, 2690)
+					+payButton('подписчиков (ботов) Instargam', 10000, 3390)
+					+payButton('подписчиков (ботов) Instargam', 15000, 4390)
+					+payButton('подписчиков (ботов) Instargam', 20000, 5290)
+
+			.column.medium-4.small-12
+
+				h5 Лайки (ботов) Instargam
+
+				.calculator__pack-buttons
+					+payButton('лайков (ботов) Instargam', 100, 100)
+					+payButton('лайков (ботов) Instargam', 200, 190)
+					+payButton('лайков (ботов) Instargam', 300, 280)
+					+payButton('лайков (ботов) Instargam', 400, 340)
+					+payButton('лайков (ботов) Instargam', 500, 400)
+					+payButton('лайков (ботов) Instargam', 700, 490)
+					+payButton('лайков (ботов) Instargam', 800, 530)
+					+payButton('лайков (ботов) Instargam', 1000, 585)
+					+payButton('лайков (ботов) Instargam', 2000, 1050)
+					+payButton('лайков (ботов) Instargam', 3000, 1390)
+					+payButton('лайков (ботов) Instargam', 4000, 1590)
+					+payButton('лайков (ботов) Instargam', 5000, 1790)
+					+payButton('лайков (ботов) Instargam', 10000, 2890)
+					+payButton('лайков (ботов) Instargam', 15000, 4090)
 
 
-			.column.medium-9.small-12
+			.column.medium-4.small-12
+
+				h5 Калькулятор
 
 				.row
 					.column.small-12
 
-						.calculator__budget
+						.calculator__budget(data-slider-type="insta")
 							.captions
 								.caption Ваш бюджет, руб.
 								.price 30 000
 
-							.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="5000" data-step="10")
+							.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="5290" data-step="20")
 								.slider-handle(data-slider-handle role="slider" tabindex="1")
 								.slider-fill(data-slider-fill)
 
 				.calculator__packs
 
-					.calculator__result
-						.name Боты
-						.count 2000
-						.caption Лайков или подписчиков
-						a(href="#").button.expanded Заказать
+					.calculator__result(data-pack-type="followers")
+						.name Подписчики (боты)
+						.count 0
+						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
 
-					.calculator__result
-						.name Боты
-						.count 2000
-						.caption Лайков или подписчиков
-						a(href="#").button.expanded Заказать
-
-					.calculator__result
-						.name Живые люди
-						.count 500
-						.caption Подписчиков
-						a(href="#").button.expanded Заказать
+					.calculator__result(data-pack-type="likes")
+						.name Лайки (боты)
+						.count 0
+						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
 
