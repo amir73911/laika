@@ -44,27 +44,29 @@ section.calculator.calculator--tw.calculator--custom(data-type="tw")
 
 				h5 Калькулятор
 
-				.row
-					.column.small-12
+				.calculator-wrapper
 
-						.calculator__budget(data-slider-type="tw")
-							.captions
-								.caption Ваш бюджет, руб.
-								.price 30 000
+					.row
+						.column.small-12
 
-							.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="9000" data-step="20")
-								.slider-handle(data-slider-handle role="slider" tabindex="1")
-								.slider-fill(data-slider-fill)
+							.calculator__budget(data-slider-type="tw")
+								.captions
+									.caption Ваш бюджет, руб.
+									.price 30 000
 
-				.calculator__packs
+								.slider.j-budget-slider(data-slider data-start="50" data-initial-start="500" data-end="9000" data-step="20")
+									.slider-handle(data-slider-handle role="slider" tabindex="1")
+									.slider-fill(data-slider-fill)
 
-					.calculator__result(data-pack-type="followers")
-						.name Подписчики
-						.count 0
-						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
+					.calculator__packs
 
-					.calculator__result(data-pack-type="reposts")
-						.name Ретвиты
-						.count 0
-						a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
+						.calculator__result(data-pack-type="followers")
+							.name Подписчики
+							.count 0
+							a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
+
+						.calculator__result(data-pack-type="reposts")
+							.name Ретвиты
+							.count 0
+							a(href="#" data-caption="" data-sum="").button.expanded.j-order-btn Заказать
 

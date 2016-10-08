@@ -176,72 +176,163 @@
       </div>
     </div>
   </section>
-  <section class="calculator">
+  <section class="calculator main-calculator">
     <div class="site-container">
       <h2 class="text-center">Узнай, что можешь получить за свои деньги</h2>
       <div class="row first-row">
         <div class="column medium-3 small-12">
           <div class="calculator__buttons">
-            <div class="calculator__buttons__item vk-button selected"><a href="#">
+            <div class="calculator__buttons__item vk-button selected"><a href="#" data-social="vk">
                 <svg class="icon">
                   <use xlink:href="#svg-icon-vk"></use>
                 </svg><span>Вконтакте</span></a></div>
-            <div class="calculator__buttons__item fb-button"><a href="#">
+            <div class="calculator__buttons__item fb-button"><a href="#" data-social="fb">
                 <svg class="icon">
                   <use xlink:href="#svg-icon-fb"></use>
                 </svg><span>Facebook</span></a></div>
-            <div class="calculator__buttons__item ok-button"><a href="#">
+            <div class="calculator__buttons__item ok-button"><a href="#" data-social="ok">
                 <svg class="icon">
                   <use xlink:href="#svg-icon-ok"></use>
                 </svg><span>Одноклассники</span></a></div>
-            <div class="calculator__buttons__item insta-button"><a href="#">
+            <div class="calculator__buttons__item insta-button"><a href="#" data-social="insta">
                 <svg class="icon">
                   <use xlink:href="#svg-icon-insta"></use>
                 </svg><span>Instagram</span></a></div>
-            <div class="calculator__buttons__item tw-button"><a href="#">
+            <div class="calculator__buttons__item tw-button"><a href="#" data-social="tw">
                 <svg class="icon">
                   <use xlink:href="#svg-icon-tw"></use>
                 </svg><span>Twitter</span></a></div>
-            <div class="calculator__buttons__item yt-button"><a href="#">
-                <svg class="icon">
-                  <use xlink:href="#svg-icon-yt"></use>
-                </svg><span>Youtube</span></a></div>
-            <div class="calculator__buttons__item gp-button"><a href="#">
-                <svg class="icon">
-                  <use xlink:href="#svg-icon-gl"></use>
-                </svg><span>Google +</span></a></div>
           </div>
         </div>
         <div class="column medium-9 small-12">
-          <div class="row">
-            <div class="column small-12">
-              <div class="calculator__budget">
-                <div class="captions">
-                  <div class="caption">Ваш бюджет, руб.</div>
-                  <div class="price">30 000</div>
-                </div>
-                <div class="slider j-budget-slider" data-slider data-start="50" data-initial-start="500" data-end="5000" data-step="10">
-                  <div class="slider-handle" data-slider-handle role="slider" tabindex="1"></div>
-                  <div class="slider-fill" data-slider-fill></div>
+          <div class="calculator-wrapper" data-social="fb">
+            <div class="row">
+              <div class="column small-12">
+                <div class="calculator__budget" data-slider-type="fb">
+                  <div class="captions">
+                    <div class="caption">Ваш бюджет, руб.</div>
+                    <div class="price">30 000</div>
+                  </div>
+                  <div class="slider j-budget-slider" data-slider data-start="50" data-initial-start="500" data-end="60000" data-step="20">
+                    <div class="slider-handle" data-slider-handle role="slider" tabindex="1"></div>
+                    <div class="slider-fill" data-slider-fill></div>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="calculator__packs">
+              <div class="calculator__result" data-pack-type="reposts">
+                <div class="name">Поделиться</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
+              <div class="calculator__result" data-pack-type="likes">
+                <div class="name">Лайки</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
+            </div>
           </div>
-          <div class="calculator__packs">
-            <div class="calculator__result">
-              <div class="name">Боты</div>
-              <div class="count">2000</div>
-              <div class="caption">Лайков или подписчиков</div><a class="button expanded" href="#">Заказать</a>
+          <div class="calculator-wrapper" data-social="vk">
+            <div class="row">
+              <div class="column small-12">
+                <div class="calculator__budget" data-slider-type="vk">
+                  <div class="captions">
+                    <div class="caption">Ваш бюджет, руб.</div>
+                    <div class="price">30 000</div>
+                  </div>
+                  <div class="slider j-budget-slider" data-slider data-start="50" data-initial-start="500" data-end="6000" data-step="20">
+                    <div class="slider-handle" data-slider-handle role="slider" tabindex="1"></div>
+                    <div class="slider-fill" data-slider-fill></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="calculator__result">
-              <div class="name">Боты</div>
-              <div class="count">2000</div>
-              <div class="caption">Лайков или подписчиков</div><a class="button expanded" href="#">Заказать</a>
+            <div class="calculator__packs">
+              <div class="calculator__result" data-pack-type="followers">
+                <div class="name">Подписчики</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
+              <div class="calculator__result" data-pack-type="likes">
+                <div class="name">Лайки</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
             </div>
-            <div class="calculator__result">
-              <div class="name">Живые люди</div>
-              <div class="count">500</div>
-              <div class="caption">Подписчиков</div><a class="button expanded" href="#">Заказать</a>
+          </div>
+          <div class="calculator-wrapper" data-social="insta">
+            <div class="row">
+              <div class="column small-12">
+                <div class="calculator__budget" data-slider-type="insta">
+                  <div class="captions">
+                    <div class="caption">Ваш бюджет, руб.</div>
+                    <div class="price">30 000</div>
+                  </div>
+                  <div class="slider j-budget-slider" data-slider data-start="50" data-initial-start="500" data-end="5290" data-step="20">
+                    <div class="slider-handle" data-slider-handle role="slider" tabindex="1"></div>
+                    <div class="slider-fill" data-slider-fill></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator__packs">
+              <div class="calculator__result" data-pack-type="followers">
+                <div class="name">Подписчики (боты)</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
+              <div class="calculator__result" data-pack-type="likes">
+                <div class="name">Лайки (боты)</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-wrapper" data-social="ok">
+            <div class="row">
+              <div class="column small-12">
+                <div class="calculator__budget" data-slider-type="ok">
+                  <div class="captions">
+                    <div class="caption">Ваш бюджет, руб.</div>
+                    <div class="price">30 000</div>
+                  </div>
+                  <div class="slider j-budget-slider" data-slider data-start="50" data-initial-start="500" data-end="34000" data-step="20">
+                    <div class="slider-handle" data-slider-handle role="slider" tabindex="1"></div>
+                    <div class="slider-fill" data-slider-fill></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator__packs">
+              <div class="calculator__result" data-pack-type="followers">
+                <div class="name">Поделиться</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
+              <div class="calculator__result" data-pack-type="likes">
+                <div class="name">Лайки</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
+            </div>
+          </div>
+          <div class="calculator-wrapper" data-social="tw">
+            <div class="row">
+              <div class="column small-12">
+                <div class="calculator__budget" data-slider-type="tw">
+                  <div class="captions">
+                    <div class="caption">Ваш бюджет, руб.</div>
+                    <div class="price">30 000</div>
+                  </div>
+                  <div class="slider j-budget-slider" data-slider data-start="50" data-initial-start="500" data-end="9000" data-step="20">
+                    <div class="slider-handle" data-slider-handle role="slider" tabindex="1"></div>
+                    <div class="slider-fill" data-slider-fill></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator__packs">
+              <div class="calculator__result" data-pack-type="followers">
+                <div class="name">Подписчики</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
+              <div class="calculator__result" data-pack-type="reposts">
+                <div class="name">Ретвиты</div>
+                <div class="count">0</div><a class="button expanded j-order-btn" href="#" data-caption="" data-sum="">Заказать</a>
+              </div>
             </div>
           </div>
         </div>

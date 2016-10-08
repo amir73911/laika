@@ -62,6 +62,7 @@ $(document).ready(function () {
 
     });
 
+    // Popups
     $('.popup-outer').click(function(e) {
         e.preventDefault();
         closeOrderPopup();

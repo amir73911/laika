@@ -200,34 +200,36 @@ Calculator.prototype.init = function () {
         e.preventDefault();
         self.selectSocial($(this));
     });
+    $('.calculator__buttons__item a').filter('[data-social="vk"]').click();
 
 };
 
 Calculator.prototype.updatePrice = function ($slider, social) {
 
-    var sum = $slider.find('.slider-handle').attr('aria-valuenow'),
-        $body = $('.calculator__budget'),
-        $packs = $('.calculator__packs');
+    var $parent = $slider.parents('.calculator-wrapper'),
+        sum = $parent.find('.slider-handle').attr('aria-valuenow'),
+        $body = $parent.find('.calculator__budget'),
+        $packs = $parent.find('.calculator__packs');
 
     // set value of budget
     $body.find('.price').html(sum);
 
     if (prices[social].followers) {
-        setResultBlock('followers');
+        setResultBlock('followers', $parent);
     }
 
     if (prices[social].likes) {
-        setResultBlock('likes');
+        setResultBlock('likes', $parent);
     }
 
     if (prices[social].reposts) {
-        setResultBlock('reposts');
+        setResultBlock('reposts', $parent);
     }
 
-    function setResultBlock (type) {
+    function setResultBlock (type, $parent) {
 
         var count = getCount(sum, prices[social][type]),
-            $block = $('.calculator__result').filter('[data-pack-type="' + type +'"]'),
+            $block = $parent.find('.calculator__result').filter('[data-pack-type="' + type +'"]'),
             $target = $block.find('.count'),
             $btn = $block.find('.button');
 
@@ -263,8 +265,13 @@ Calculator.prototype.updatePrice = function ($slider, social) {
 
 Calculator.prototype.selectSocial = function ($btn) {
 
+    var $a = $btn.find('a');
+
     $('.calculator__buttons__item').removeClass('selected');
     $btn.addClass('selected');
+
+    $('.main-calculator .calculator-wrapper').hide();
+    $('.main-calculator .calculator-wrapper').filter('[data-social="' + $a.data('social') + '"]').show();
 
 };
 
