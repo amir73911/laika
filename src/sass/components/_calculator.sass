@@ -6,7 +6,15 @@ $calculator-border-radius: 4px
     display: none
 
 .calculator
-  padding: 65px 20px 70px
+  padding: $vertical-gutter * 2 0
+
+  +breakpoint(small only)
+    h2
+      display: none
+
+  +breakpoint(medium)
+    padding: 65px 0 70px
+
 
   &--custom
     background-image: url('../images/calculator-back.png')
@@ -153,9 +161,10 @@ $calculator-border-radius: 4px
 
   &__packs
     +flex-grid-row
-    margin:
-      left: -$vertical-gutter / 2
-      right: -$vertical-gutter / 2
+    +breakpoint(medium)
+      margin:
+        left: -$vertical-gutter / 2
+        right: -$vertical-gutter / 2
 
 
   &__result

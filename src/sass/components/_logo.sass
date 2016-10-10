@@ -1,11 +1,13 @@
 $logo-back-size: rem-calc(57px)
+$logo-height: rem-calc(80)
+$Logo-top-padding: $logo-height - rem-calc(59)
+$logo-glasses-top: $logo-height - rem-calc(56)
 
 .logo
-  display: block
-  height: 92px
+  height: $logo-height
   overflow: hidden
   position: relative
-  padding-top: 33px
+  padding-top: $Logo-top-padding
 
   .logo-icon-wrapper
     display: inline-block
@@ -28,7 +30,7 @@ $logo-back-size: rem-calc(57px)
   &__glasses
     display: block
     position: absolute
-    top: 37px
+    top: $logo-glasses-top
     left: 5px
     animation-delay: 0.75s
 

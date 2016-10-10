@@ -1,5 +1,7 @@
 .main-menu
   color: $white
+  +breakpoint(small only)
+    margin-top: $vertical-gutter
 
   .icon
     fill: $white
@@ -19,13 +21,10 @@
       line-height: 65px
 
   &__item
-    display: block
-    margin-bottom: $vertical-gutter
-    text-align: left
+    display: inline-block
+    vertical-align: middle
     +breakpoint($header-breakpoint)
       text-align: center
-      display: inline-block
-      vertical-align: middle
       &:not(:last-child)
         margin:
           left: $vertical-gutter
@@ -46,6 +45,8 @@
     font-size: 15px
     font-weight: 500
     color: $white
+    +breakpoint(small only)
+      display: none
 
 // Inner page settings
 body.inner-page

@@ -3,14 +3,7 @@ footer.footer
 		.row
 			.column.large-3.medium-6.small-12
 
-				a.logo(href="/")
-					span.logo-icon-wrapper
-						span.logo__back
-						span.logo__person.animated.bounceInUp
-							i.icon.icon-logo-person
-						span.logo__glasses.animated.rotateInDownLeft
-							i.icon.icon-logo-glasses
-					span.logo__text Laika
+				include logo.pug
 
 				span.logo__slogan Эффективное и быстрое продвижение в социальных сетях
 
@@ -36,28 +29,28 @@ footer.footer
 
 				.footer__contacts
 					//- a(href="tel:88003000500").phone 8 800 3000 500
-					a(href="mailto:info@turbo-laika.ru").email info@turbo-laika.ru
+					a(href="mailto:info@turbolaika.ru").email info@turbolaika.ru
 
 			.column.large-3.medium-6.small-12
 
-				h6 Мы в соцсетях
+				//- h6 Мы в соцсетях
 
-				.footer__socials
-
-					a(href="#" target="_black" title="Facebook")
-						+svg('fb')
-
-					a(href="#" target="_black" title="ВКонтакте")
-						+svg('vk')
-
-					a(href="#" target="_black" title="Одноклассники")
-						+svg('ok')
-
-					a(href="https://www.instagram.com/turbolaika.ru/" target="_black" title="Instagram")
-						+svg('insta')
-
-					a(href="#" target="_black" title="Twitter")
-						+svg('tw')
+				//-.footer__socials
+				//-
+				//-	a(href="#" target="_black" title="Facebook")
+				//-		+svg('fb')
+				//-
+				//-	a(href="#" target="_black" title="ВКонтакте")
+				//-		+svg('vk')
+				//-
+				//-	a(href="#" target="_black" title="Одноклассники")
+				//-		+svg('ok')
+				//-
+				//-	a(href="https://www.instagram.com/turbolaika.ru/" target="_black" title="Instagram")
+				//-		+svg('insta')
+				//-
+				//-	a(href="#" target="_black" title="Twitter")
+				//-		+svg('tw')
 
 include popups.pug
 include ../metrics.pug

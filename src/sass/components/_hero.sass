@@ -1,8 +1,17 @@
 .hero
   background: url("../images/hands.png") center bottom no-repeat
-  padding: 50px 20px 350px
   color: $white
   text-align: center
+  padding:
+    left: rem-calc(map-get($grid-column-gutter, small))
+    right: rem-calc(map-get($grid-column-gutter, small))
+    bottom:  $vertical-gutter * 16
+  +breakpoint(medium)
+    padding:
+      top: rem-calc(50)
+      left: rem-calc(map-get($grid-column-gutter, medium)) / 2
+      right: rem-calc(map-get($grid-column-gutter, medium)) / 2
+      bottom: rem-calc(350)
 
   h1
     font-size:  38px

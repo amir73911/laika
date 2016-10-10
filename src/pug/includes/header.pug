@@ -1,16 +1,9 @@
 header.header
 
-	a.logo(href="/")
-		span.logo-icon-wrapper
-			span.logo__back
-			span.logo__person.animated.bounceInUp
-				i.icon.icon-logo-person
-			span.logo__glasses.animated.rotateInDownLeft
-				i.icon.icon-logo-glasses
-		span.logo__text Laika
+	include logo.pug
 
 	.main-menu
-		.main-menu__title Выберите социальную сеть для продвижения:
+		//-.main-menu__title Выберите социальную сеть для продвижения:
 		.main-menu__items
 			a(href="facebook.html").main-menu__item.selected
 				span.main-menu__social-icon.-facebook-back-color
@@ -35,5 +28,5 @@ header.header
 
 	.header__contacts
 		//- a(href="tel:88003000500").phone 8 800 3000 500
-		a(href="mailto:info@turbo-laika.ru").email info@turbo-laika.ru
+		a(href="mailto:info@turbolaika.ru").email info@turbolaika.ru
 
